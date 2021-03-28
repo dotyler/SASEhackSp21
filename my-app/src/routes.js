@@ -25,6 +25,8 @@ import Icons from "views/examples/Icons.js";
 import Board from "views/examples/Board.js";
 import AllAssignments from "views/examples/AllAssignments.js";
 import MATH1412 from "views/examples/MATH1412.js";
+import PDFTRONExample from "pdftron.js";
+
 //import pdftron from "views/examples/pdftron";
 
 
@@ -53,13 +55,13 @@ var routes = [
     component: MATH1412,
     layout: "/admin",
   },
-  /*{
+  {
     path: "/PDFAssignmentExample",
     name: "Assignment Example",
     icon: "",
-    component: pdftron,
+    component: PDFTRONExample,
     layout: "/admin",
-  },*/
+  },
   {
     path: "/sketchpad",
     name: "Sketchpad",

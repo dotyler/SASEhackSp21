@@ -35,16 +35,16 @@ const MATH1412 = () => {
       
       <Header />
       
-      <Container >
+      
         <Row>
-          <div className="mb-5 mb-xl-0 col-xl-8">
+          <div className="col-6">
             <DetailedAccordion />
           </div>
-          <div className="col-xl-4">
+          <div className="col-6">
             <SetReminder />
             </div>
         </Row>
-      </Container>
+      
     </>
   );
 };

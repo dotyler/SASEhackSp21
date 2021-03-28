@@ -18,9 +18,9 @@
 import React from "react";
 
 // reactstrap components
-import { MDBDataTableV5 } from 'mdbreact';
+import { MDBDataTableV5 ,MDBCard, MDBCardBody, MDBCardHeader, MDBInput, MDBBtn, MDBTable, MDBTableBody, MDBTableHead  } from 'mdbreact';
 import Header from "components/Headers/Header";
-import { Container } from "reactstrap";
+import { Container, Button, Form, FormGroup, Label, Input, FormText, Row } from 'reactstrap';
 
 export default function SetReminder() {
   const [datatable, setDatatable] = React.useState({
@@ -58,18 +58,23 @@ export default function SetReminder() {
         assignment: 'Homework 12',
         date: '2021/03/29',
         priority: 'Homework',
+        check: <MDBInput label=" " type="checkbox" id="checkbox6" />,
       },
       {
         class: 'MATH 1426',
         assignment: 'Final Exam',
         date: '2021/05/25',
         priority: 'Exam',
+        check: <MDBInput label=" " type="checkbox" id="checkbox6" />,
+
       },
       {
         class: 'MATH 1426',
         assignment: 'Final Exam',
         date: '2021/05/25',
         priority: 'Exam',
+        check: <MDBInput label=" " type="checkbox" id="checkbox6" />,
+
       },
 
       
@@ -78,5 +83,40 @@ export default function SetReminder() {
 
   return (<>
   <Container style={{background:"SeaShell"}} fluid>
-  <MDBDataTableV5 hover entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} data={datatable} /></Container></>);
+  {/*<MDBDataTableV5 hover entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} data={datatable} />*/}
+  <MDBCard narrow>
+  <MDBCardHeader className="view view-cascade gradient-card-header blue-gradient d-flex justify-content-between align-items-center py-2 mx-4 mb-3">
+
+    <a href="#" className="white-text mx-3">Upcoming Asssignments</a>
+  </MDBCardHeader>
+  <MDBCardBody cascade>
+    <MDBTable btn fixed>
+      <MDBTableHead columns={datatable.columns} />
+      <MDBTableBody rows={datatable.rows} />
+    </MDBTable>
+  </MDBCardBody>
+  
+</MDBCard>
+<Row className="view view-cascade gradient-card-header blue-gradient d-flex justify-content-between align-items-center py-2 mx-4 mb-3">
+<a class="btn btn-info" onclick="toastr.info('Hi! I am info message.');">Set Reminder</a>
+<FormGroup>
+        <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
+          <option>1 day before</option>
+          <option>2 day before</option>
+        </Input>
+      </FormGroup>
+<FormGroup check>
+        <Label check>
+          <Input type="checkbox" />{' '}
+          Email
+        </Label>
+      </FormGroup>
+      <FormGroup check>
+        <Label check>
+          <Input type="checkbox" />{' '}
+          Text Message
+        </Label>
+      </FormGroup>
+      </Row>
+</Container></>);
 }
