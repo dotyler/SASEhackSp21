@@ -26,7 +26,7 @@ import { Card, Container, Row } from "reactstrap";
 import Header from "components/Headers/Header.js";
 import DetailedAccordion from "components/accordion.js";
 
-const Sketchpad = () => {
+const MATH1412 = () => {
   return (
     <>
       {/*<Header />*/}
@@ -46,4 +46,4 @@ const Sketchpad = () => {
   );
 };
 
-export default Sketchpad;
+export default MATH1412;

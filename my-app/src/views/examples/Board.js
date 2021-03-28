@@ -20,7 +20,7 @@ import React from "react";
 import BoardContainer from "components/boardcontainer/BoardContainer.jsx";
 
 // reactstrap components
-import { Card, Container, Row , Button} from "reactstrap";
+import {Container,Button} from "reactstrap";
 
 // core components
 import Header from "components/Headers/Header.js";
