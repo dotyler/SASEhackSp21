@@ -15,14 +15,42 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useState } from "react";
 
 // reactstrap components
-import { Card, CardBody, CardTitle, Container, Row, Col, Button} from "reactstrap";
+import { Card, CardBody, CardTitle, Container, Row, Col, Button, NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane} from "reactstrap";
 import Alerts from "./alerts.js";
-import {BrowserRouter as Router,Route, Redirect,Switch} from 'react-router-dom';
+import MATH1412 from "../../views/examples/MATH1412.js";
+import { Link } from 'react-router-dom'
+
+
+var routesHeader = [
+  {
+    path: "/index/MATH1412",
+    name: "View Course",
+    icon: "fas fa-tachometer-alt text-primary",
+    component: MATH1412,
+    layout: "/admin",
+  }
+];
+
 
 const Header = () => {
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,7 +101,6 @@ const Header = () => {
                       <Col className="col-auto">
                         <div >
                         <Button color="primary" size="sm" style={{margin: "10px"}}>View Course</Button>{' '}
-
                         </div>
                       </Col>
                     </Row>
@@ -112,7 +139,6 @@ const Header = () => {
                       <Col className="col-auto">
                         <div >
                         <Button color="primary" size="sm" style={{margin: "10px"}}>View Course</Button>{' '}
-
                         </div>
                       </Col>
                     </Row>

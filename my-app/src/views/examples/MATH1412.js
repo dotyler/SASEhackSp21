@@ -25,6 +25,7 @@ import { Card, Container, Row } from "reactstrap";
 // core components
 import Header from "components/Headers/Header.js";
 import DetailedAccordion from "components/accordion.js";
+import SetReminder from "../examples/SetReminder.js";
 
 const MATH1412 = () => {
   return (
@@ -33,13 +34,15 @@ const MATH1412 = () => {
       {/* Page content */}
       
       <Header />
-      <DetailedAccordion />
-      <Container className="mt--7" fluid>
+      
+      <Container >
         <Row>
-          <div className="col">
-            <Card className="shadow border-0">
-            </Card>
+          <div className="mb-5 mb-xl-0 col-xl-8">
+            <DetailedAccordion />
           </div>
+          <div className="col-xl-4">
+            <SetReminder />
+            </div>
         </Row>
       </Container>
     </>

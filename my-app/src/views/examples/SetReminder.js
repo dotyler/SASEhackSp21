@@ -22,13 +22,13 @@ import { MDBDataTableV5 } from 'mdbreact';
 import Header from "components/Headers/Header";
 import { Container } from "reactstrap";
 
-export default function AllAssignments() {
+export default function SetReminder() {
   const [datatable, setDatatable] = React.useState({
     columns: [
       {
         label: 'Class',
         field: 'class',
-        width: 150,
+        width: 10,
         attributes: {
           'aria-controls': 'DataTable',
           'aria-label': 'Name',
@@ -37,19 +37,19 @@ export default function AllAssignments() {
       {
         label: 'Assignment',
         field: 'assignment',
-        width: 270,
+        width: 20,
       },
       {
         label: 'Due Date',
         field: 'date',
         sort: 'asc',
-        width: 150,
+        width: 20,
       },
       {
         label: 'Type',
         field: 'priority',
         sort: 'asc',
-        width: 100,
+        width: 20,
       },
     ],
     rows: [
@@ -60,31 +60,11 @@ export default function AllAssignments() {
         priority: 'Homework',
       },
       {
-        class: 'CHEM 2321',
-        assignment: 'Lab Report 8',
-        date: '2021/04/20',
-        priority: 'Lab',
-      },
-      {
-              
-        class: 'CSE 1310',
-        assignment: 'System Architect',
-        date: '2021/04/25',
-        priority: 'Project',
-      },
-      {
         class: 'MATH 1426',
         assignment: 'Final Exam',
         date: '2021/05/25',
         priority: 'Exam',
       },
-      {
-        class: 'ENGR 1250',
-        assignment: 'Final Exam',
-        date: '2021/05/25',
-        priority: 'Exam',
-      },
-
       {
         class: 'MATH 1426',
         assignment: 'Final Exam',
@@ -96,7 +76,7 @@ export default function AllAssignments() {
     ],
   });
 
-  return (<><Header />
+  return (<>
   <Container style={{background:"SeaShell"}} fluid>
   <MDBDataTableV5 hover entriesOptions={[5, 20, 25]} entries={5} pagesAmount={4} data={datatable} /></Container></>);
 }

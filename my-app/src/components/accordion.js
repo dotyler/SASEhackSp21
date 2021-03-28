@@ -68,11 +68,12 @@ export default function DetailedAccordion() {
           </div>
         </AccordionSummary>
         <AccordionDetails>
-          <Button size="small">
-            Class Lecture
-          </Button>
-          <Button size="small">Class Notes: Sketchpad</Button>
-          <Button size="small">Assigned Homework</Button>
+          <Col><Row><Button size="small" color="primary">Class Lecture
+          </Button></Row>
+          
+            <Row><Button size="small" color="primary">Class Notes: Sketchpad</Button></Row>
+         <Row> <Button size="small" color="primary">Assigned Homework</Button>
+          </Row></Col>
 
         </AccordionDetails>
         <AccordionDetails className={classes.details}>
@@ -92,8 +93,100 @@ export default function DetailedAccordion() {
         </AccordionDetails>
         <Divider />
         <AccordionActions>
-          <Button size="small">Cancel</Button>
-          <Button size="small" color="primary">
+          <Button size="small" color="primary">Cancel</Button>
+          <Button size="small" color="primary" color="primary">
+            Save
+          </Button>
+        </AccordionActions>
+      </Accordion></Container>
+      <Container fluid>
+      <Accordion defaultExpanded>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1c-content"
+          id="panel1c-header"
+        >
+          <div className={classes.column}>
+            <Typography className={classes.heading}>March 24th, 2021</Typography>
+          </div>
+          <div className={classes.column}>
+            <Typography className={classes.secondaryHeading}>Introductions to Limits</Typography>
+          </div>
+        </AccordionSummary>
+        <AccordionDetails>
+            <Col><Row><Button size="small" color="primary">Class Lecture
+          </Button></Row>
+          
+            <Row><Button size="small" color="primary">Class Notes: Sketchpad</Button></Row>
+         <Row> <Button size="small" color="primary">Assigned Homework</Button>
+          </Row></Col>
+
+        </AccordionDetails>
+        <AccordionDetails className={classes.details}>
+          <div className={classes.column} />
+          <div className={classes.column}>
+            <Chip label="Barbados" onDelete={() => {}} />
+          </div>
+          <div className={clsx(classes.column, classes.helper)}>
+            <Typography variant="caption">
+              Got chat
+              <br />
+              <a href="#secondary-heading-and-columns" className={classes.link}>
+                Learn more
+              </a>
+            </Typography>
+          </div>
+        </AccordionDetails>
+        <Divider />
+        <AccordionActions>
+          <Button size="small" color="primary">Cancel</Button>
+          <Button size="small" color="primary" color="primary">
+            Save
+          </Button>
+        </AccordionActions>
+      </Accordion></Container>
+      <Container fluid>
+      <Accordion defaultExpanded>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1c-content"
+          id="panel1c-header"
+        >
+          <div className={classes.column}>
+            <Typography className={classes.heading}>March 22th, 2021</Typography>
+          </div>
+          <div className={classes.column}>
+            <Typography className={classes.secondaryHeading}>Derivative Rules</Typography>
+          </div>
+        </AccordionSummary>
+        <AccordionDetails>
+        <Col><Row><Button size="small" color="primary">Class Lecture
+          </Button></Row>
+          
+            <Row><Button size="small" color="primary">Class Notes: Sketchpad</Button></Row>
+         <Row> <Button size="small" color="primary">Assigned Homework</Button>
+          </Row></Col>
+
+        </AccordionDetails>
+        <AccordionDetails className={classes.details}>
+          <div className={classes.column} />
+          <div className={classes.column}>
+            <Chip label="Barbados" onDelete={() => {}} />
+          </div>
+          <div className={clsx(classes.column, classes.helper)}>
+            <Typography variant="caption">
+              Got chat
+              <br />
+              <a href="#secondary-heading-and-columns" className={classes.link}>
+                Learn more
+              </a>
+            </Typography>
+          </div>
+        </AccordionDetails>
+        <Divider />
+        <AccordionActions>
+          <Button size="small" color="primary">Cancel</Button>
+          <Button size="small" color="primary" color="primary">
             Save
           </Button>
         </AccordionActions>

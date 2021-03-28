@@ -24,6 +24,10 @@ import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
 import Board from "views/examples/Board.js";
 import AllAssignments from "views/examples/AllAssignments.js";
+import MATH1412 from "views/examples/MATH1412.js";
+//import pdftron from "views/examples/pdftron";
+
+
 
 
 var routes = [
@@ -40,6 +44,20 @@ var routes = [
     name: "Icons",
     icon: "ni ni-planet text-blue",
     component: Icons,
+    layout: "/admin",
+  },*/
+  {
+    path: "/MATH1412",
+    name: "Class Example",
+    icon: "",
+    component: MATH1412,
+    layout: "/admin",
+  },
+  /*{
+    path: "/PDFAssignmentExample",
+    name: "Assignment Example",
+    icon: "",
+    component: pdftron,
     layout: "/admin",
   },*/
   {
