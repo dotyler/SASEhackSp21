@@ -61,24 +61,19 @@ export default function DetailedAccordion() {
           id="panel1c-header"
         >
           <div className={classes.column}>
-            <Typography className={classes.heading}>March 26th</Typography>
+            <Typography className={classes.heading}>March 26th, 2021</Typography>
           </div>
           <div className={classes.column}>
             <Typography className={classes.secondaryHeading}>Introduction to Intergrals</Typography>
           </div>
-          <AccordionActions>
-          <Button size="small">Cancel</Button>
-          <Button size="small" color="primary">
-            Save
-          </Button>
-        </AccordionActions>
         </AccordionSummary>
         <AccordionDetails>
-          <Button color="textSecondary">
-            The click event of the nested action will propagate up and expand the accordion unless
-            you explicitly stop it.
+          <Button size="small">
+            Class Lecture
           </Button>
-          <Button size="small">Learn More</Button>
+          <Button size="small">Class Notes: Sketchpad</Button>
+          <Button size="small">Assigned Homework</Button>
+
         </AccordionDetails>
         <AccordionDetails className={classes.details}>
           <div className={classes.column} />

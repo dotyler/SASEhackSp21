@@ -29,7 +29,7 @@ class BoardContainer extends React.Component
     render() {
 
         return (
-            <div className="container">
+            <div className="boardcontainer">
                 <div class="tools-section">
                     <div className="color-picker-container">
                         Select Brush Color : &nbsp; 

@@ -20,29 +20,41 @@ import React from "react";
 import BoardContainer from "components/boardcontainer/BoardContainer.jsx";
 
 // reactstrap components
-import { Card, Container, Row } from "reactstrap";
+import { Card, Container, Row , Button} from "reactstrap";
 
 // core components
 import Header from "components/Headers/Header.js";
 import DetailedAccordion from "components/accordion.js";
 
+
 const Sketchpad = () => {
   return (
     <>
-      {/*<Header />*/}
-      {/* Page content */}
-      
-      <Header />
+    <Container className="order-xl-1 col-xl-8 center">
+        <br></br>
+        <Button color="primary">Save</Button>{' '}
+        <Button color="primary">Upload</Button>{' '}
+        <Button color="primary">Share</Button>{' '}
+
+        <br></br>
+      </Container>
+      {/*<Header />
+      <Container className="order-xl-1 col-xl-8">
       <DetailedAccordion />
-      <Container className="mt--7" fluid>
+      </Container>*/}
+      <div>
+    <Container fluid>
+    {<BoardContainer />}
+    </Container></div>
+      {/*<Container className="mt--7" fluid>
         <Row>
           <div className="col">
             <Card className="shadow border-0">
-              <BoardContainer/>
+              {<BoardContainer/>}
             </Card>
           </div>
         </Row>
-      </Container>
+      </Container>*/}
     </>
   );
 };
