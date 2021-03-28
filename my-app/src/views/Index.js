@@ -29,8 +29,7 @@ import {
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";
-import Alerts from "components/alerts.js";
-import ClassAccordion from "components/accordion.js";
+import Alerts from "components/Headers/alerts.js";
 
 const Index = (props) => {
   if (window.Chart) {
@@ -41,8 +40,7 @@ const Index = (props) => {
   return (
     <>
       <Header />
-      <Alerts />
- 
+      
       {/* Page content */}
       <Container className="mt--7" fluid>
 
