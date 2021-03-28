@@ -41,7 +41,8 @@ const Header = () => {
                           Intro to Programming
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
-                          CSE 1310
+                        <a href={"https://mentis.uta.edu/explore/profile/fadiah-qudah"}>CSE 1310</a>
+
                         </span>
                       </div>
                       <Col className="col-auto">
@@ -70,7 +71,7 @@ const Header = () => {
                         >
                           Calculus I
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">MATH 1412</span>
+                        <span className="h2 font-weight-bold mb-0"><a href={"https://mentis.uta.edu/explore/profile/mark-krasij"}>MATH 1426</a></span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
@@ -98,7 +99,7 @@ const Header = () => {
                         >
                           Problem Solving
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">ENGR 1250</span>
+                        <span className="h2 font-weight-bold mb-0"><a href={"https://mentis.uta.edu/explore/profile/rosie+-kallie"}>ENGR 1250</a></span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
@@ -126,7 +127,7 @@ const Header = () => {
                         >
                           Intro to Software Engineering
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">CSE 3330</span>
+                        <span className="h2 font-weight-bold mb-0"><a href={"https://mentis.uta.edu/explore/profile/rodrigo-augusto-silva-dos-santos"}>CSE 3310</a></span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-info text-white rounded-circle shadow">
