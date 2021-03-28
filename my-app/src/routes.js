@@ -23,26 +23,29 @@ import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
 import Board from "views/examples/Board.js";
+import AllAssignments from "views/examples/AllAssignments.js";
+
 
 var routes = [
   {
     path: "/index",
     name: "Dashboard",
-    icon: "ni ni-tv-2 text-primary",
+    icon: "fas fa-tachometer-alt text-primary",
     component: Index,
     layout: "/admin",
   },
+  /*
   {
     path: "/icons",
     name: "Icons",
     icon: "ni ni-planet text-blue",
     component: Icons,
     layout: "/admin",
-  },
+  },*/
   {
     path: "/sketchpad",
     name: "Sketchpad",
-    icon: "ni ni-pin-3 text-orange",
+    icon: "fas fa-pen-alt text-orange",
     component: Board,
     layout: "/admin",
   },
@@ -67,6 +70,13 @@ var routes = [
     component: Tables,
     layout: "/admin",
   },*/
+  {
+    path: "/assignments",
+    name: "All Assignments",
+    icon: "ni ni-bullet-list-67 text-red",
+    component: AllAssignments,
+    layout: "/admin",
+  },
   /*{
     path: "/login",
     name: "Login",

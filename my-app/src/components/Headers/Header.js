@@ -18,10 +18,21 @@
 import React from "react";
 
 // reactstrap components
-import { Card, CardBody, CardTitle, Container, Row, Col} from "reactstrap";
+import { Card, CardBody, CardTitle, Container, Row, Col, Button} from "reactstrap";
 import Alerts from "./alerts.js";
+import {BrowserRouter as Router,Route, Redirect,Switch} from 'react-router-dom';
 
 const Header = () => {
+
+
+
+
+
+
+
+
+
+
   return (
     <>
       <div className="header bg-gradient-info pb-8 pt-5 pt-md-8">
@@ -42,21 +53,30 @@ const Header = () => {
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
                         <a href={"https://mentis.uta.edu/explore/profile/fadiah-qudah"}>CSE 1310</a>
-
                         </span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-danger text-white rounded-circle shadow">
-                          <i className="fas fa-chart-bar" />
+                          <i className="fas fa-laptop-code" />
                         </div>
                       </Col>
                     </Row>
-                    <p className="mt-3 mb-0 text-muted text-sm">
+                    <Row>
+                      <div className="col">
+                      <p className="mt-3 mb-0 text-muted text-sm">
                       <span className="text-success mr-2">
                         98.58%
                       </span>{" "}
                       <span className="text-nowrap">A</span>
                     </p>
+                      </div>
+                      <Col className="col-auto">
+                        <div >
+                        <Button color="primary" size="sm" style={{margin: "10px"}}>View Course</Button>{' '}
+
+                        </div>
+                      </Col>
+                    </Row>
                   </CardBody>
                 </Card>
               </Col>
@@ -75,16 +95,27 @@ const Header = () => {
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
-                          <i className="fas fa-chart-pie" />
+                          <i className="fas fa-square-root-alt" />
                         </div>
                       </Col>
                     </Row>
-                    <p className="mt-3 mb-0 text-muted text-sm">
-                      <span className="text-danger mr-2">
+                    
+                    <Row>
+                      <div className="col">
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                      <span className="text-yellow mr-2">
                          73.48%
                       </span>{" "}
                       <span className="text-nowrap">C</span>
                     </p>
+                      </div>
+                      <Col className="col-auto">
+                        <div >
+                        <Button color="primary" size="sm" style={{margin: "10px"}}>View Course</Button>{' '}
+
+                        </div>
+                      </Col>
+                    </Row>
                   </CardBody>
                 </Card>
               </Col>
@@ -103,16 +134,26 @@ const Header = () => {
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                          <i className="fas fa-users" />
+                          <i className="fas fa-tools" />
                         </div>
                       </Col>
                     </Row>
-                    <p className="mt-3 mb-0 text-muted text-sm">
-                      <span className="text-warning mr-2">
-                        79.10%
+                    <Row>
+                      <div className="col">
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                      <span className="text-green mr-2">
+                         88.45%
                       </span>{" "}
-                      <span className="text-nowrap">C</span>
+                      <span className="text-nowrap">B</span>
                     </p>
+                      </div>
+                      <Col className="col-auto">
+                        <div >
+                        <Button color="primary" size="sm" style={{margin: "10px"}}>View Course</Button>{' '}
+
+                        </div>
+                      </Col>
+                    </Row>
                   </CardBody>
                 </Card>
               </Col>
@@ -125,22 +166,32 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Intro to Software Engineering
+                          Organic Chemistry I
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0"><a href={"https://mentis.uta.edu/explore/profile/rodrigo-augusto-silva-dos-santos"}>CSE 3310</a></span>
+                        <span className="h2 font-weight-bold mb-0"><a href={"https://mentis.uta.edu/explore/profile/rodrigo-augusto-silva-dos-santos"}>CHEM 2321</a></span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-info text-white rounded-circle shadow">
-                          <i className="fas fa-percent" />
+                          <i className="ni ni-atom" />
                         </div>
                       </Col>
                     </Row>
-                    <p className="mt-3 mb-0 text-muted text-sm">
-                      <span className="text-success mr-2">
-                        93.00%
+                    <Row>
+                      <div className="col">
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                      <span className="text-warning mr-2">
+                         65.64%
                       </span>{" "}
-                      <span className="text-nowrap">A</span>
+                      <span className="text-nowrap">D</span>
                     </p>
+                      </div>
+                      <Col className="col-auto">
+                        <div >
+                        <Button color="primary" size="sm" style={{margin: "10px"}}>View Course</Button>{' '}
+
+                        </div>
+                      </Col>
+                    </Row>
                   </CardBody>
                 </Card>
               </Col>
